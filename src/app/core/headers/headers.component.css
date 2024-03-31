@@ -1,0 +1,69 @@
+.law-firm-header {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 1.5rem; /* Use relative units for padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 1rem;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    width: 3rem; /* Use relative units for logo size */
+    height: 3rem;
+    margin-right: 0.5rem; /* Adjust spacing */
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+}
+
+.firm-name {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.navbar {
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 1rem; /* Adjust spacing */
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #ffcc00;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      flex-direction: column; /* Stack navigation items vertically on smaller screens */
+      align-items: center; /* Center align items */
+    }
+
+    li {
+      margin-right: 0;
+      margin-bottom: 0.5rem; /* Add margin between navigation items */
+    }
+  }
+}
